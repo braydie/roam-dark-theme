@@ -1,0 +1,277 @@
+:root {
+  --dark-grey: #182026;
+  --grey: #2f3437;
+  --light-grey: #5c7080;
+  --white: #ffffff;
+  --orange: rgba(255, 152, 0, 1);
+  --orange-hover: rgba(255, 152, 0, 0.87);
+  --hot-orange: rgba(230, 126, 34, 1);
+  --burnt-orange: rgba(255, 87, 34, 1);
+  --roam-dark: rgb(24, 32, 38);
+}
+
+body {
+  background-color: var(--grey);
+}
+
+.roam-topbar {
+  background-color: var(--dark-grey);
+}
+
+.bp3-input {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.roam-body .roam-app {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rm-reference-container {
+  margin-bottom: 2rem;
+}
+
+.rm-reference-item {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.rm-title-display {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+h1,
+h2,
+h3 {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+.check-container {
+  margin-right: 0.25rem;
+}
+
+.check-container input:checked ~ .checkmark {
+  background-color: var(--hot-orange);
+}
+
+.rm-page-ref-link-color,
+a {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+a:focus,
+a:hover {
+  color: var(--orange-hover);
+}
+
+.rm-page-ref-tag {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.block-highlight-yellow {
+  background-color: rgba(121, 85, 72, 0.6);
+}
+
+code {
+  background: rgba(18, 18, 18, 0.4);
+  color: var(--burnt-orange);
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  margin-right: 0 !important;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.bp3-button.bp3-minimal {
+  color: var(--light-grey);
+}
+
+.bp3-button.bp3-minimal:hover,
+.bp3-button[class*='bp3-icon-']:hover:before,
+.bp3-button:hover .bp3-icon-filter:before {
+  color: var(--white);
+}
+
+.bp3-button[class*='bp3-icon-']::before {
+  color: inherit !important;
+}
+
+.bp3-elevation-3 {
+  background-color: var(--dark-grey) !important;
+}
+
+.bp3-icon-menu-closed {
+  margin-right: 0.5rem;
+}
+
+#right-sidebar {
+  background-color: var(--dark-grey) !important;
+}
+
+.roam-block > span > div {
+  background-color: none !important;
+}
+
+.roam-block .rm-block-ref {
+  background-color: transparent !important;
+}
+
+.rm-block-ref:hover {
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(255, 152, 0, 1);
+}
+
+.rm-pages-title-col a {
+  color: var(--white) !important;
+}
+
+#all-pages-search .rm-pages-row:first-of-type {
+  background: none !important;
+  border-bottom: 3px solid #f5f5f5;
+}
+
+.rm-pages-row.rm-pages-row-highlight {
+  background-color: var(--dark-grey) !important;
+}
+
+.roam-highlight {
+  background-color: var(--hot-orange);
+  margin: 0;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.roam-highlight > span {
+  color: var(--dark-grey);
+  padding: 0.2rem;
+}
+
+.rm-alias-external::after {
+  background-image: url('data:image/svg+xml; utf8, %3Csvg%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%3Cpath%20d%3D%22M10%206H6C4.89543%206%204%206.89543%204%208V18C4%2019.1046%204.89543%2020%206%2020H16C17.1046%2020%2018%2019.1046%2018%2018V14M14%204H20M20%204V10M20%204L10%2014%22%20stroke%3D%22%234A5568%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E'); /* background-image: url('https://raw.githubusercontent.com/refactoringui/heroicons/master/src/outline-md/md-external-link.svg'); */
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  content: '';
+  position: relative;
+  top: 0;
+  left: 1px;
+}
+
+.controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: var(--light-grey);
+}
+
+.controls .simple-bullet-outer.roam-bullet-closed {
+  background-color: var(--light-grey);
+}
+
+.controls .simple-bullet-outer.roam-bullet-closed .simple-bullet-inner {
+  background-color: var(--white);
+}
+
+hr {
+  border-top: 2px solid var(--light-grey);
+}
+
+.block-border-left {
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#find-or-create-input {
+  color: var(--light-grey);
+}
+
+.rm-find-or-create-wrapper .bp3-popover-target.bp3-popover-open #find-or-create-input {
+  color: var(--white);
+}
+
+.rm-page-ref-brackets {
+  display: none;
+}
+
+.bp3-popover .bp3-popover-content {
+  background: var(--roam-dark);
+  color: var(--white);
+}
+
+.bp3-popover .bp3-popover-arrow-fill {
+  fill: var(--roam-dark);
+}
+
+.bp3-popover-content .bp3-button:not([class*='bp3-intent-']) {
+  color: var(--roam-dark);
+  background-color: var(--light-grey);
+  background-image: none;
+  padding-right: 8px !important;
+}
+
+.bp3-popover-content .bp3-button sub {
+  margin-left: 0.25rem;
+}
+
+/* code mirror  */
+.CodeMirror {
+  border-radius: 5px;
+  border-color: var(--roam-dark);
+}
+
+.CodeMirror .CodeMirror-cursor {
+  border-color: var(--burnt-orange);
+}
+
+.CodeMirror .CodeMirror-scroll {
+  background: var(--dark-grey);
+}
+
+.CodeMirror .CodeMirror-code pre {
+  color: var(--white);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.CodeMirror .cm-keyword {
+  color: var(--orange);
+}
+
+.CodeMirror .cm-string {
+  color: var(--burnt-orange);
+}
+
+.CodeMirror .cm-bracket {
+  color: var(--light-grey);
+}
+
+.CodeMirror .cm-comment {
+  color: var(--light-grey);
+}
+
+.CodeMirror .cm-builtin {
+  color: var(--white);
+}
+
+.CodeMirror .CodeMirror-gutters {
+  background: var(--roam-dark);
+  border-right-color: var(--light-grey);
+}
+
+.CodeMirror-hscrollbar {
+  background: var(--grey);
+}
+
+.bp3-dialog {
+  background-color: var(--grey) !important;
+  color: var(--white);
+  padding: 1rem !important;
+}
+
+.bp3-dialog > div {
+  padding: 0;
+}
+
+.bp3-dialog > div > div {
+  margin-bottom: 1rem;
+}
+
+.bp3-dialog .bp3-button:first-of-type {
+  margin-right: 1rem;
+}
